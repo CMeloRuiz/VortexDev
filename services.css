@@ -1,0 +1,40 @@
+main {
+    background-color: #dfe9e9;
+    padding: 100px;
+}
+
+.serviceContainer {
+    border-radius: 20px;
+    background-color: #5f6d7a;
+    padding: 50px 30px;
+}
+
+.serviceContainer h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+
+.serviceContainer ul {
+    margin-left: 50px;
+    margin-right: 800px;
+    border-right: 2px solid white;
+}   
+
+.serviceContainer a {
+    text-decoration: none;
+}
+
+.serviceContainer ul li {
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    list-style: none;
+    transition: 0.5s all ease;
+}
+
+.serviceContainer ul li:hover {
+    padding-left: 10px;
+}
