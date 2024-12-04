@@ -1,40 +1,88 @@
-main {
-    background-color: #dfe9e9;
-    padding: 100px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.serviceContainer {
-    border-radius: 20px;
-    background-color: #5f6d7a;
-    padding: 50px 30px;
-}
+/*-----Services_Intro-----*/
 
-.serviceContainer h2 {
+.servicesIntro {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
-    color: #ffffff;
-    margin-bottom: 70px;
+    padding: 50px 120px;
+    background: #2b3946cc;
+    color: #FFFFFF;
 }
 
-.serviceContainer ul {
-    margin-left: 50px;
-    margin-right: 800px;
-    border-right: 2px solid white;
-}   
+.servicesIntro h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
 
-.serviceContainer a {
+.servicesIntro p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+/*-----Services_Body-----*/
+
+.servicesCont {
+    color: #222222;
+}
+
+.servicesCont h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.servicesCont img {
+    width: 40vw;
+} 
+
+.serviceItem {
+    padding: 50px 120px;
+    display: flex;
+    gap: 50px;
+}
+
+.btn {
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: inline-block; /* Para que el div se ajuste al contenido */
+    padding: 8px 26px;
+    margin-top: 40px;
+}
+
+.btn a {
     text-decoration: none;
 }
 
-.serviceContainer ul li {
-    margin-bottom: 50px;
-    color: #ffffff;
-    font-weight: 500;
-    list-style: none;
-    transition: 0.5s all ease;
+.btn a h4 {
+    color: #636266;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.serviceContainer ul li:hover {
-    padding-left: 10px;
+.btn a h4:hover {
+    color: #701010;
+}
+
+#serviceOne,
+#serviceThree,
+#serviceFive,
+#serviceSeven {
+    background-color: #bed0e8;
+}
+
+#contactServiceSection {
+    background-color: #636266;
+    text-align: center;
+    padding: 100px;
+}
+
+#contactServiceSection h3 {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 }
