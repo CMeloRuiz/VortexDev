@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="blog.css">
-    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
     <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
     <title>VortexDev</title>
 </head>
@@ -13,15 +13,31 @@
     <header>
         <nav>
             <div class="mainLogo">
-                <a href="index.html"><img src="images/logo2.png" alt=""></a>
+                <h1>Logo</h1>
             </div>
-            <ul>
-                <a href="services.html"><li>Servicios</li></a>
-                <a href="projects.html"><li>Proyectos</li></a>
-                <a href="blog.html"><li>Blog</li></a>
-                <a href="form.html" class="contact"><li>Creamos tu Web</li></a>
+            <ul id="menuList">
+                <li><a href="./services.html">Servicios</a></li>
+                <li><a href="./projects.html">Proyectos</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./form.html">Creamos tu Web</a></li>
             </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
         </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
     </header>
 
     <section id="blog">
@@ -35,14 +51,14 @@
             <div class="blog-box">
                 <!--img----->
                 <div class="blog-img">
-                    <img src="images/blog-1.jpg" alt="Blog">
+                    <img src="/images/blog-1.jpg" alt="Blog">
                 </div>
                 <!--text----->
                 <div class="blog-text">
                     <span>Por VortexDev / Viernes 15 Noviembre 2024</span>
-                    <a href="blog-1.html" class="blog-title">¿Por qué tu negocio necesita un sitio web profesional?</a>
+                    <a href="/html/blog-1.html" class="blog-title">¿Por qué tu negocio necesita un sitio web profesional?</a>
                     <p>Hoy en día, tener un sitio web no es opcional para los negocios que quieren crecer y destacar en un mercado competitivo. Un sitio web profesional no solo incrementa tu presencia en línea, sino que también refuerza la confianza de los clientes en tu marca.</p>
-                    <a href="blog-1.html">Read More</a>
+                    <a href="/html/blog-1.html">Read More</a>
                 </div>
             </div>
 
@@ -50,14 +66,14 @@
             <div class="blog-box">
                 <!--img----->
                 <div class="blog-img">
-                    <img src="images/blog-2.jpg" alt="Blog">
+                    <img src="/images/blog-2.jpg" alt="Blog">
                 </div>
                 <!--text----->
                 <div class="blog-text">
                     <span>Por VortexDev / Viernes 15 Noviembre 2024</span>
-                    <a href="blog-2.html" class="blog-title">SEO para principiantes: Cómo mejorar la visibilidad de tu web</a>
+                    <a href="/html/blog-2.html" class="blog-title">SEO para principiantes: Cómo mejorar la visibilidad de tu web</a>
                     <p>Tener un sitio web es solo el comienzo. El SEO (Optimización para Motores de Búsqueda) asegura que los clientes puedan encontrarte fácilmente en Google y otros buscadores.</p>
-                    <a href="blog-2.html">Read More</a>
+                    <a href="/html/blog-2.html">Read More</a>
                 </div>
             </div>
 
@@ -65,14 +81,14 @@
             <div class="blog-box">
                 <!--img----->
                 <div class="blog-img">
-                    <img src="images/blog-3.jpg" alt="Blog">
+                    <img src="/images/blog-3.jpg" alt="Blog">
                 </div>
                 <!--text----->
                 <div class="blog-text">
                     <span>Por VortexDev / Viernes 15 Noviembre 2024</span>
-                    <a href="blog-3.html" class="blog-title">Dominio y Hosting: Qué son y por qué los necesitas para tu página web</a>
+                    <a href="/html/blog-3.html" class="blog-title">Dominio y Hosting: Qué son y por qué los necesitas para tu página web</a>
                     <p>Si quieres tener un sitio web, necesitas dos elementos esenciales: un dominio y un hosting. Pero, ¿qué son y cómo funcionan?</p>
-                    <a href="blog-3.html">Read More</a>
+                    <a href="/html/blog-3.html">Read More</a>
                 </div>
             </div>
             

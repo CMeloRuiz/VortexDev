@@ -5,7 +5,7 @@ textarea {
 }
 
 .container-form {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
@@ -29,7 +29,6 @@ textarea {
 }
 
 .contact-form {
-    /* background-color: #9c7fd7; */
     background-color: #8c89a3;
     position: relative;
 }
@@ -215,7 +214,6 @@ textarea.input {
 
 .icon {
     font-size: 1.5em;
-    /* width: 28px; */
     margin-right: 1rem;
 }
 
