@@ -140,28 +140,26 @@ h3 {
 
 .benefits {
     background-color: #b8c3d4;
-    padding: 50px 120px;
-    text-align: center;
-}
-
-.cards-container {
-    color: #1c1c1c;
-    font-size: 0.85em;
-    text-align: left;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-  
-.card-benefit {
-    width: 250px;
-    padding: 10px;
-    color: #3f3a3a;;
+    padding: 50px;
 }
 
 .benefits-title {
     color: #414141;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 35px;
+    justify-content: center;
+}
+
+.card-benefit {
+    padding: 10px;
+    color: #3f3a3a;;
+    font-size: 13px;
 }
 
 .benefit-icon {
@@ -175,30 +173,29 @@ h3 {
 .technologies {
     background: linear-gradient(#d7cee9, #9d99c0);
     color: #3c3c3c;
-    padding: 100px 120px;
     text-align: center;
 }
 
 .tech-content {
-    margin-bottom: 50px;
+    padding: 50px;
 }
 
-.tech-content > p {
-    margin-top: 20px;
+.tech-content h2 {
+    margin-bottom: 20px;
 }
 
-.tech-icons {
-    display: flex;
+.tech-container {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
     gap: 20px;
-}
-
-.tech-img {
-    width: 200px;
+    justify-content: center;
 }
 
 .tech-icon {
     font-size: 80px;
     color: #655076;
 }
+
 
 

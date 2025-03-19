@@ -4,16 +4,15 @@
 
 .servicesIntro {
     text-align: center;
-    padding: 50px 120px;
-    background: #2b3946cc;
+    padding: 50px;
+    background: #9fa9b3;
     color: #FFFFFF;
 }
 
 .servicesIntro h1 {
     font-family: "Roboto", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 30px;
 }
 
 .servicesIntro p {
@@ -85,4 +84,10 @@
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 500;
+}
+
+@media (max-width:1000px) {
+    .serviceItem {
+        flex-direction: column;
+    }
 }
