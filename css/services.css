@@ -87,7 +87,24 @@
 }
 
 @media (max-width:1000px) {
+    .servicesCont img {
+        width: 70vw;
+    } 
+
     .serviceItem {
+        padding: 30px 20px;
         flex-direction: column;
+        text-align: center;
+    }
+
+    #serviceOne,
+    #serviceThree,
+    #serviceFive,
+    #serviceSeven {
+        flex-direction: column-reverse;
+    }
+
+    .contentServ h2 {
+        font-size: 30px;
     }
 }
