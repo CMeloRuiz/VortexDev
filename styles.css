@@ -11,13 +11,19 @@
 
 /*-------Header---------*/
 
-nav {
+header {
+    position: sticky;
+    top: 0;
     z-index: 1001;
+}
+
+nav {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #55616b;
+    background-color: #434b53bd;
+    backdrop-filter: blur(10px);
     position: relative;
     height: 100px;
 }
@@ -63,7 +69,8 @@ nav ul li a {
         right: 0;
         flex-direction: column;
         text-align: center;
-        background-color: #55616b;
+        background-color: #434b53bd;
+        backdrop-filter: blur(10px);
         gap: 0;
         overflow: hidden;
     }
