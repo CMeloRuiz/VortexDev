@@ -22,8 +22,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #434b53bd;
-    backdrop-filter: blur(10px);
+    background-color: #434b53;
     position: relative;
     height: 100px;
 }
@@ -69,8 +68,7 @@ nav ul li a {
         right: 0;
         flex-direction: column;
         text-align: center;
-        background-color: #434b53bd;
-        backdrop-filter: blur(10px);
+        background-color: #434b53;
         gap: 0;
         overflow: hidden;
     }
