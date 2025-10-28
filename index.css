@@ -6,7 +6,7 @@ h2 {
 /* Introduction Section */
 
 .introduction {
-    background-image: url(/images/5590457.jpg);
+    background-image: url(./images/5590457.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 50px 120px;
