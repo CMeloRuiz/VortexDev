@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
+    <title>VortexDev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
+    </header>
+
+    <div class="container-form">
+        <span class="big-circle"></span>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Pongámonos en contacto</h3>
+                <p class="text">
+                    Estamos comprometidos con el desarrollo de tu pagina web, para que te beneficies de este recurso y le puedas sacar el mejor provecho. Tenemos a tu disposicion los siguientes enlaces de contacto o si prefieres dejanos tus datos y nos comunicaremos contigo para atender tu solicitud.
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <i class="fa-solid fa-location-dot icon"></i>
+                        <p>Villapinzon - Colombia</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <p>contact@vortexdev.io</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa-brands fa-square-whatsapp icon"></i>
+                        <a href="https://wa.me/573208291613" class="whatsapp-btn" target="_blank">
+                            <p>+57 3208291613</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p>Contactanos :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/573208291613" class="whatsapp-btn" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="https://formsubmit.co/contact@vortexdev.io" method="POST" autocomplete="off" >
+                    <h3 class="title">Contactanos</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input">
+                        <label for="">Nombre</label>
+                        <span>Nombre</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input">
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input">
+                        <label for="">Telefono</label>
+                        <span>Telefono</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Mensaje</label>
+                        <span>Mensaje</span>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn">
+
+                    <!--Para no salirse de la pagina de formulario-->
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/form.html">
+                    <!--Esto es para evitar el captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">contact@vortexdev.io</a></li>
+                    <li><a href="#">+57 3208291613</a></li>
+                    <li><a href="#">Villapinzon - Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Siguenos</h4>
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

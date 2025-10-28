@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog-content.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
+    <title>VortexDev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
+    </header>
+
+    <main>
+        <h2>Dominio y Hosting: Qué son y por qué los necesitas para tu página web</h2>
+        <time datetime="2024-11-15">15 de Noviembre de 2024</time>
+        <p>Si quieres tener un sitio web, necesitas dos elementos esenciales: un dominio y un hosting. Pero, ¿qué son y cómo funcionan?</p>
+        <h3>¿Qué es un dominio?</h3>
+        <p>Es la dirección de tu sitio web (por ejemplo, www.vortexdev.io).</p>
+        <ul>
+            <li>Ejemplo: Piensa en el dominio como la dirección de una casa.</li>
+            <li>Consejo: Escoge un nombre corto, fácil de recordar y relacionado con tu marca.</li>
+        </ul>
+        <h3>¿Qué es un hosting?</h3>
+        <p>Es el lugar donde se almacenan los archivos de tu sitio web.</p>
+        <ul>
+            <li>Ejemplo: El hosting es como el terreno donde construyes tu casa.</li>
+            <li>Tipos de hosting: Compartido, VPS, dedicado y en la nube.</li>
+            <li>Consejo: Para pequeños negocios, el hosting compartido suele ser suficiente al inicio.</li>
+        </ul>
+        <h3>¿Cómo funcionan juntos?</h3>
+        <p>El dominio redirige a los visitantes al servidor de hosting, donde se encuentran los archivos de tu sitio.</p>
+        <h3>Elegir un proveedor</h3>
+        <p>Factores a considerar:</p>
+        <ul>
+            <li>Velocidad y tiempo de actividad.</li>
+            <li>Soporte técnico.</li>
+            <li>Relación calidad-precio.</li>
+        </ul>
+        <p>En VortexDev nos gusta invertir en herramientas y recursos de calidad, es por eso que dentro de nuestros aliados en cuanto a Hosting y Dominio trabajamos con uno de los mejores: Hostinger.</p>
+        <h3>Conclusión</h3>
+        <p>Entender estos conceptos te permitirá tomar decisiones informadas para el desarrollo de tu sitio web.</p>
+        <hr>
+        <div class="author-blog">
+            <h4>Author</h4>
+            <p>VortexDev</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">contact@vortexdev.io</a></li>
+                    <li><a href="#">+57 3208291613</a></li>
+                    <li><a href="#">Villapinzon - Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Siguenos</h4>
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

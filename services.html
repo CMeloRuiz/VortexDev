@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
+    <title>VortexDev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
+    </header>
+
+    <main>
+        <section class="servicesIntro">
+            <h1>Diseño, desarrollo y optimización web <br>Servicios Basicos</h1>
+        </section>
+        <section class="servicesCont">
+            <article class="serviceItem" id="serviceOne">
+                <div class="imgServiceOne">
+                    <img src="/images/service1.png" alt="image service one">
+                </div>
+                <div class="contentServ">
+                    <h2>Plantilla pagina web</h2>
+                    <p>Nuestras plantillas web combinan diseño y funcionalidad, ofreciéndote una base profesional y personalizable para tu negocio. Con opciones modernas, podrás lanzar tu sitio rápidamente y destacar frente a la competencia.<br>
+                    <br>Cada plantilla está optimizada para una experiencia de usuario fluida y atractiva, integrando las últimas tendencias de diseño. Proyecta tu visión con una estructura perfecta y eficiente.</p>
+                </div>
+            </article>
+            <article class="serviceItem" id="serviceTwo">
+                <div class="contentServ">
+                    <h2>Diseño responsive</h2>
+                    <p>Tu página web lucirá impecable en cualquier dispositivo, gracias a nuestro diseño responsive. Adaptamos cada elemento para ofrecer una experiencia uniforme en smartphones, tablets y más.<br>
+                    <br>Este enfoque no solo mejora la navegación, sino que también incrementa tu posicionamiento en motores de búsqueda. Estética y funcionalidad, todo en un diseño inteligente.</p>
+                </div>
+                <div class="imgServiceOne">
+                    <img src="/images/service2.jpg" alt="image service one">
+                </div>
+            </article>
+            <article class="serviceItem" id="serviceThree">
+                <div class="imgServiceOne">
+                    <img src="/images/service3.jpg" alt="image service one">
+                </div>
+                <div class="contentServ">
+                    <h2>Optimización SEO</h2>
+                    <p>Aumenta tu visibilidad en línea con nuestras estrategias de optimización SEO personalizadas. Desde palabras clave hasta configuraciones técnicas, atraemos el tráfico ideal a tu sitio.<br>
+                    <br>El SEO no solo posiciona tu página, sino que también conecta tu negocio con la audiencia correcta. Con nuestras técnicas, tu marca destacará en su sector</p>
+                </div>
+            </article>
+            <article class="serviceItem" id="serviceFour">
+                <div class="contentServ">
+                    <h2>Mantenimiento periódico</h2>
+                    <p>Tu web siempre estará actualizada y en su mejor versión con nuestro mantenimiento periódico. Solucionamos problemas, optimizamos funciones y mantenemos tu sitio seguro.<br>
+                    <br>Anticipamos y prevenimos inconvenientes para que nada interrumpa tu crecimiento. Nos encargamos de todo, mientras tú te enfocas en tu negocio.</p>
+                </div>
+                <div class="imgServiceOne">
+                    <img src="/images/service4.png" alt="image service one">
+                </div>
+            </article>
+            <article class="serviceItem" id="serviceFive">
+                <div class="imgServiceOne">
+                    <img src="/images/service5.jpg" alt="image service one">
+                </div>
+                <div class="contentServ">
+                    <h2>Hosting y Dominio</h2>
+                    <p>Proporcionamos hosting confiable y rápido para asegurar el funcionamiento continuo de tu sitio web. Con servidores seguros, tu página estará siempre disponible y protegida.<br>
+                    <br>También gestionamos tu dominio, desde la elección hasta las renovaciones, para que refleje tu marca. Construimos una base sólida para tu presencia digital.</p>
+                </div>
+            </article>
+            <article class="serviceItem" id="serviceSix">
+                <div class="contentServ">
+                    <h2>Creación de páginas auxiliares (secciones)</h2>
+                    <p>Enriquecemos tu sitio con páginas auxiliares que aportan valor, como blogs, portafolios o áreas de contacto. Diseñamos cada sección estratégicamente para complementar tu contenido.<br>
+                    <br>Estas páginas no solo mejoran la experiencia de navegación, sino que fortalecen tu estrategia SEO. Creamos secciones funcionales y alineadas con tus objetivos.</p>
+                </div>
+                <div class="imgServiceOne">
+                    <img src="/images/service6.png" alt="image service one">
+                </div>
+            </article>
+            <article class="serviceItem" id="serviceSeven">
+                <div class="imgServiceOne">
+                    <img src="/images/service7.jpg" alt="image service one">
+                </div>
+                <div class="contentServ">
+                    <h2>Integración con redes sociales</h2>
+                    <p>Conecta tu página con el mundo social integrando tus redes directamente en tu sitio. Tus visitantes podrán seguirte y compartir tu contenido fácilmente.<br>
+                    <br>Potenciamos tu presencia digital con enlaces estratégicos e interactivos que consolidan todos tus canales en un solo lugar. Mejora tu alcance y fortalece tu marca.</p>
+                </div>
+            </article>
+            <article id="contactServiceSection">
+                <h3>Hablemos Acerca De Tu Proyecto</h3>
+                <div class="btn">
+                    <a href="form.html"><h4>Contactanos</h4></a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">contact@vortexdev.io</a></li>
+                    <li><a href="#">+57 3208291613</a></li>
+                    <li><a href="#">Villapinzon - Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Siguenos</h4>
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

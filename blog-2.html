@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog-content.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
+    <title>VortexDev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
+    </header>
+
+    <main>
+        <h2>SEO para principiantes: Cómo mejorar la visibilidad de tu página web</h2>
+        <time datetime="2024-11-15">15 de Noviembre de 2024</time>
+        <p>Tener un sitio web es solo el comienzo. El SEO (Optimización para Motores de Búsqueda) asegura que los clientes puedan encontrarte fácilmente en Google y otros buscadores.</p>
+        <h3>Conceptos básicos de SEO</h3>
+        <ol>
+            <li>Palabras clave: Son los términos que tus clientes buscan. Ejemplo: “zapatos deportivos baratos”.</li>
+            <li>Contenido relevante: Publica información útil y de calidad relacionada con tu negocio.</li>
+            <li>Optimización de imágenes: Usa nombres descriptivos para los archivos e incluye texto alternativo (alt text).</li>
+            <li>Velocidad de carga: Asegúrate de que tu sitio web cargue rápidamente.</li>
+            <li>Enlaces internos y externos: Añade enlaces que conecten tus páginas y apunten a recursos externos de calidad.</li>
+        </ol>
+        <h3>Herramientas gratuitas para SEO</h3>
+        <ul>
+            <li>Google Keyword Planner: Encuentra palabras clave relevantes.</li>
+            <li>Google Analytics: Mide el tráfico y el comportamiento de los usuarios.</li>
+            <li>PageSpeed Insights: Evalúa y mejora la velocidad de tu sitio.</li>
+        </ul>
+        <h3>Conclusión</h3>
+        <p>El SEO no tiene que ser complicado. Con prácticas básicas puedes hacer que tu sitio destaque entre la competencia.</p>
+        <hr>
+        <div class="author-blog">
+            <h4>Author</h4>
+            <p>VortexDev</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">contact@vortexdev.io</a></li>
+                    <li><a href="#">+57 3208291613</a></li>
+                    <li><a href="#">Villapinzon - Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Siguenos</h4>
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

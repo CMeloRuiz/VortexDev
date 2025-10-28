@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog-content.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
+    <title>VortexDev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html"><img src="./images/logo2.png" alt=""></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
+    </header>
+
+    <main>
+        <h2>¿Por qué tu negocio necesita un sitio web profesional?</h2>
+        <time datetime="2024-11-15">15 de Noviembre de 2024</time>
+        <p>Hoy en día, tener un sitio web no es opcional para los negocios que quieren crecer y destacar en un mercado competitivo. Un sitio web profesional no solo incrementa tu presencia en línea, sino que también refuerza la confianza de los clientes en tu marca.</p>
+        <h3>Beneficios de un sitio web profesional</h3>
+        <ul>
+            <li>Credibilidad: Una página bien diseñada transmite profesionalismo y genera confianza en tus clientes.</li>
+            <li>Disponibilidad 24/7: Tu sitio web trabaja para ti incluso cuando estás descansando.</li>
+            <li>Mayor alcance: Llegas a clientes locales, nacionales e incluso internacionales.</li>
+            <li>Canal de comunicación: Ofrece un espacio para que los clientes se comuniquen contigo fácilmente.</li>
+            <li>Marketing económico: Comparado con la publicidad tradicional, un sitio web es una herramienta rentable y efectiva.</li>
+        </ul>
+        <h3>Ejemplos prácticos</h3>
+        <p>Comparar un negocio con y sin sitio web. Por ejemplo:</p>
+        <ul>
+            <li>Tienda de ropa con catálogo en línea vs. solo redes sociales.</li>
+            <li>Marca personal con portafolio vs. sin presencia en internet.</li>
+        </ul>
+        <h3>Conclusión</h3>
+        <p>Un sitio web profesional no es un gasto, sino una inversión clave para el éxito de tu negocio.</p>
+        <hr>
+        <div class="author-blog">
+            <h4>Author</h4>
+            <p>VortexDev</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">contact@vortexdev.io</a></li>
+                    <li><a href="#">+57 3208291613</a></li>
+                    <li><a href="#">Villapinzon - Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Siguenos</h4>
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

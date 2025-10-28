@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
+    <title>VortexDev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
+    </header>
+    <main>
+        <section class="introduction">
+            <div class="intro-content">
+                <h2>¡Creamos tu Pagina Web!</h2>
+                <p>Imagina una página web que hable por tu marca y conecte profundamente con tus clientes. VortexDev crea experiencias digitales únicas con tecnología innovadora que impulsa tu crecimiento. Confía en nosotros para hacer realidad tu visión y llevar tu presencia digital al siguiente nivel.</p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="services-intro">
+                <h2>Servicios para Potenciar tu Web</h2>
+                <p>Ofrecemos soluciones completas en diseño web, optimización SEO y mantenimiento, pensadas para destacar tu negocio en internet. Cada servicio está enfocado en maximizar el rendimiento, la visibilidad y la confiabilidad de tu sitio web.</p>
+            </div>
+            <div class="cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <i class="fa-solid fa-laptop-code" style="color: #3e7c53;"></i>
+                        <h3>Diseño Web Atractivo y Único</h3>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Creamos sitios web personalizados que reflejan tu marca y ofrecen una experiencia visual impactante y funcional para los usuarios.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <i class="fa-solid fa-magnifying-glass-chart" style="color: #b83333;"></i>
+                        <h3>Optimización SEO para Visibilidad</h3>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Implementamos estrategias SEO efectivas desde el inicio para asegurar que tu sitio sea fácilmente encontrado en los motores de búsqueda.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <i class="fa-solid fa-screwdriver-wrench" style="color: #201ab8;"></i>
+                        <h3>Mantenimiento y Actualización Continua</h3>
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Ofrecemos servicios de mantenimiento y actualización para asegurar que tu sitio web funcione de manera óptima y siempre tenga contenido relevante.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefits-title">
+                <h2>¿Por que elegir VortexDev?</h2>
+            </div>
+            <div class="benefits-container">
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-people-group" style="color: rgb(203, 16, 16);"></i>
+                    </div>
+                    <h3>Experiencia Personalizada y Cercana</h3>
+                    <p>En VortexDev entendemos que cada proyecto es único. Nos tomamos el tiempo para conocer tus necesidades y objetivos específicos, asegurándonos de que cada detalle se adapte a la visión de tu marca.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-server" style="color: rgb(239, 209, 11);"></i>
+                    </div>
+                    <h3>Optimización para el Rendimiento</h3>
+                    <p>Diseñamos sitios web completamente optimizados para velocidad y eficiencia. Esto no solo mejora la experiencia del usuario, sino que también es un factor clave para el SEO, ayudando a tu negocio a destacar en buscadores.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-compass-drafting" style="color: rgb(53, 144, 58);"></i>
+                    </div>
+                    <h3>Diseño Funcional y Moderno</h3>
+                    <p>Utilizamos un enfoque de diseño centrado en la funcionalidad y la estética. Cada elemento de tu sitio web se elige para mejorar la experiencia del usuario, brindando un aspecto moderno y profesional que representa tu marca.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-toolbox" style="color: rgb(97, 56, 221);"></i>
+                    </div>
+                    <h3>Escalabilidad y Flexibilidad</h3>
+                    <p>Construimos sitios con una arquitectura flexible que permite escalabilidad. Si tus necesidades cambian con el tiempo, tu sitio estará preparado para crecer contigo sin necesidad de una reconstrucción total.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-headset" style="color: rgb(43, 97, 34);"></i>
+                    </div>
+                    <h3>Soporte Técnico Continuo</h3>
+                    <p>Ofrecemos soporte técnico constante para que siempre tengas respaldo. Desde actualizaciones hasta ajustes en el diseño, estamos aquí para asegurarnos de que tu sitio se mantenga en óptimas condiciones.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-globe" style="color: rgb(58, 39, 171);"></i>
+                    </div>
+                    <h3>Conexión con un Hosting de Alta Calidad</h3>
+                    <p>En VortexDev, nos asociamos con servicios de hosting de alta calidad que garantizan servidores rápidos, seguros y confiables. Esto proporciona a tus usuarios una experiencia sin interrupciones y fortalece el rendimiento de tu sitio.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-code" style="color: rgb(203, 16, 16);"></i>
+                    </div>
+                    <h3>100% Código Personalizado</h3>
+                    <p>Nos enorgullece ofrecer sitios creados completamente desde cero, sin depender de CMS como WordPress o Shopify, lo cual permite un control total sobre el diseño y la funcionalidad del sitio.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="benefit-icon">
+                        <i class="fa-solid fa-lightbulb" style="color: rgb(206, 170, 26);"></i>
+                    </div>
+                    <h3>Compromiso con la Innovación</h3>
+                    <p>Nos mantenemos al día con las últimas tendencias y tecnologías web para asegurarnos de que cada proyecto refleje la vanguardia del desarrollo y diseño en internet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="technologies">
+            <div class="tech-content">
+                <h2>Tecnologías que Impulsan tu Web</h2>
+                <p>En VortexDev utilizamos herramientas de última generación para crear sitios web dinámicos, seguros y optimizados. Estas tecnologías nos permiten ofrecer soluciones rápidas y efectivas, adaptadas a las necesidades de cada cliente.</p>
+            </div>
+            <div class="tech-container">
+                <div class="tech-img">
+                    <i class="fa-brands fa-html5 tech-icon"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="tech-img">
+                    <i class="fa-brands fa-css3-alt tech-icon"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="tech-img">
+                    <i class="fa-brands fa-js tech-icon"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="tech-img">
+                    <i class="fa-brands fa-react tech-icon"></i>
+                    <h3>React JS</h3>
+                </div>
+                <div class="tech-img">
+                    <i class="fa-brands fa-node tech-icon"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="tech-img">
+                    <i class="fa-brands fa-git tech-icon"></i>
+                    <h3>GIT</h3>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">contact@vortexdev.io</a></li>
+                    <li><a href="#">+57 3208291613</a></li>
+                    <li><a href="#">Villapinzon - Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Siguenos</h4>
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

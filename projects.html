@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a7fa5fd2a2.js" crossorigin="anonymous"></script>
+    <title>VortexDev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        <script>
+            let menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu () {
+                if (menuList.style.maxHeight === "0px") {
+                    menuList.style.maxHeight = "300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                };
+            }
+
+        </script>
+    </header>
+
+    <main>
+        <section class="projects">
+            <article class="projects-title">
+                <h1>Nuestro Trabajo - Ejemplo de Proyectos</h1>
+            </article>
+            <article class="projects-intro">
+                <p>Damos vida a tus ideas con páginas web increíbles. Explora nuestros proyectos y descubre cómo hemos ayudado a diferentes negocios a destacar en internet. Cada sitio que creamos es único, pensado para ser atractivo, rápido y fácil de usar. Nos enfocamos en cada detalle para que tu página refleje lo mejor de tu marca. ¡Inspírate con nuestro trabajo y da el primer paso para hacer realidad tu web!</p>
+            </article>
+            <article class="projects-container">
+
+                <div class="project-item">
+                    <img src="./images/Projects/televilla.png" alt="">
+                    <h3><a href="https://televilla.com.co/" target="_blank">Pagina Web de TeleVilla</a></h3>
+                </div>
+
+                <div class="project-item">
+                    <img src="./images/Projects/televilla.png" alt="">
+                    <h3><a href="https://televilla.com.co/" target="_blank">Pagina Web de TeleVilla</a></h3>
+                </div>
+
+                <div class="project-item">
+                    <img src="./images/Projects/televilla.png" alt="">
+                    <h3><a href="https://televilla.com.co/" target="_blank">Pagina Web de TeleVilla</a></h3>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">contact@vortexdev.io</a></li>
+                    <li><a href="#">+57 3208291613</a></li>
+                    <li><a href="#">Villapinzon - Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>Siguenos</h4>
+                <div class="socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
